@@ -4,7 +4,7 @@ class CreatePersonalDatabases < ActiveRecord::Migration
       t.string :name
       t.integer :height
       t.integer :weight
-      t.binary :image
+      t.string :image
 
       t.timestamps null: false
     end
