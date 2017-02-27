@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+person1 = Personal_databases.create(name: "Airi Taira", height: 155, weight: 45, image: "/Users/miki/onboarding2017/original_service/app/assets/images/profile.jpg")
