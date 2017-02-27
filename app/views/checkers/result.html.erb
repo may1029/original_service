@@ -1,2 +1,10 @@
 <h1>Checkers#index</h1>
 <p>Enter your personal data</p>
+
+<%= @bmi.round(2) %> <br>
+<% @model.each do |model| %>
+  <%= model.name %><br>
+  <%= model.height %><br>
+  <%= model.weight %><br>
+  <%= image_tag model.image, alt: model.name, size: '120x150' %><br>
+<% end %>

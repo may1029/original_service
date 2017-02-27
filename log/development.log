@@ -403,3 +403,967 @@ Processing by CheckersController#result as HTML
   Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"110", "weight"=>"22", "commit"=>"Calculate"}
   Rendered text template (0.0ms)
 Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 19:52:03 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"110", "weight"=>"22", "commit"=>"Calculate"}
+  Rendered checkers/result.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/checkers" for ::1 at 2017-02-27 19:52:14 +0900
+
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (22.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.2ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (165.6ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 19:52:29 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"110", "weight"=>"22", "commit"=>"Calculate"}
+  Rendered checkers/result.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:01:17 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"156", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.3ms)[0m  SELECT  "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 37ms (ActiveRecord: 1.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find PersonalDatabase with 'id'=):
+  app/controllers/checkers_controller.rb:8:in `result'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.0ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.6ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:01:31 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"156", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (2.1ms)[0m  [1mSELECT  "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."id" = ? LIMIT 1[0m  [["id", 156]]
+Completed 404 Not Found in 10ms (ActiveRecord: 2.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find PersonalDatabase with 'id'=156):
+  app/controllers/checkers_controller.rb:8:in `result'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.9ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:02:02 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.1ms)[0m  SELECT  "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."id" = ? LIMIT 1  [["id", 155]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find PersonalDatabase with 'id'=155):
+  app/controllers/checkers_controller.rb:8:in `result'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.3ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:04:29 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  Rendered checkers/result.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 105ms (Views: 97.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/checkers" for ::1 at 2017-02-27 20:05:06 +0900
+
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.8ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:05:10 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  Rendered checkers/result.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 78ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:05:29 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (2.4ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 0]]
+  Rendered checkers/result.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.4ms)
+
+ActionView::Template::Error (undefined method `height' for #<ActiveRecord::Relation []>):
+    2: <p>Enter your personal data</p>
+    3: 
+    4: <%= @bmi.round(2) %> <br>
+    5: <%= @model.height %>
+  app/views/checkers/result.html.erb:5:in `_app_views_checkers_result_html_erb__1338755279506511695_70118075042880'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (162.3ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:07:08 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  Rendered checkers/result.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/checkers" for ::1 at 2017-02-27 20:08:43 +0900
+
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.0ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (162.2ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:08:48 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FoD//vtJeyTe0hTFJxcRmaiBWkc+0nkeQPVnYzO0haseFaJxaZvGAm2SBqb630rOXkD3w/ScnTqKkgLRjduSA==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  Rendered checkers/result.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-27 20:11:06 +0900
+Processing by CheckersController#index as HTML
+  Rendered checkers/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:11:12 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tePqQtwKZmA2f3hjCPuS+n+6nV9utO/odfOoI5NQpon5wb804kEslKyyeCqHjLOXIGGb6X2d1Hjm2jW1Waka1w==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.4ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 0]]
+  Rendered checkers/result.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 90ms (Views: 87.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-02-27 20:12:12 +0900
+Processing by CheckersController#index as HTML
+  Rendered checkers/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:12:19 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qqMXDXjrzkRW7FpSByglb/so2fHDhg3o9wuakdQIKpXmgUJ7RqCEsMwhWhuIXwQCpPPfR9CvNnhkIgcHHvGWyw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (2.4ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 73ms (Views: 61.6ms | ActiveRecord: 3.2ms)
+  [1m[36mPersonalDatabase Load (7.4ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases"[0m
+  [1m[35mPersonalDatabase Load (0.3ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 155]]
+  [1m[36mPersonalDatabase Load (0.5ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE (id > '12')[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.7ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 13]]
+  [1m[35m (10.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 14]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 15]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 16]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 17]]
+  [1m[35m (6.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 18]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 19]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 20]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 21]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 22]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mPersonalDatabase Load (0.3ms)[0m  SELECT "personal_databases".* FROM "personal_databases"
+
+
+Started GET "/checkers" for ::1 at 2017-02-27 20:24:43 +0900
+
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (86.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (196.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (78.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (177.2ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:24:46 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qqMXDXjrzkRW7FpSByglb/so2fHDhg3o9wuakdQIKpXmgUJ7RqCEsMwhWhuIXwQCpPPfR9CvNnhkIgcHHvGWyw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.4ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 95ms (Views: 92.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:33:39 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qqMXDXjrzkRW7FpSByglb/so2fHDhg3o9wuakdQIKpXmgUJ7RqCEsMwhWhuIXwQCpPPfR9CvNnhkIgcHHvGWyw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (0.1ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `hight' for #<PersonalDatabase:0x007f8b4740c250>):
+    4: <%= @bmi.round(2) %> <br>
+    5: <% @model.each do |model| %>
+    6:   <%= model.name %>
+    7:   <%= model.hight %>
+    8:   <%= model.weight %>
+    9: <% end %>
+  app/views/checkers/result.html.erb:7:in `block in _app_views_checkers_result_html_erb__1338755279506511695_70118086371060'
+  app/views/checkers/result.html.erb:5:in `_app_views_checkers_result_html_erb__1338755279506511695_70118086371060'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.2ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.3ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:33:49 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qqMXDXjrzkRW7FpSByglb/so2fHDhg3o9wuakdQIKpXmgUJ7RqCEsMwhWhuIXwQCpPPfR9CvNnhkIgcHHvGWyw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.1ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:34:12 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qqMXDXjrzkRW7FpSByglb/so2fHDhg3o9wuakdQIKpXmgUJ7RqCEsMwhWhuIXwQCpPPfR9CvNnhkIgcHHvGWyw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (0.1ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:39:55 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qqMXDXjrzkRW7FpSByglb/so2fHDhg3o9wuakdQIKpXmgUJ7RqCEsMwhWhuIXwQCpPPfR9CvNnhkIgcHHvGWyw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.1ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/checkers" for ::1 at 2017-02-27 20:39:59 +0900
+
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.2ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:41:07 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qqMXDXjrzkRW7FpSByglb/so2fHDhg3o9wuakdQIKpXmgUJ7RqCEsMwhWhuIXwQCpPPfR9CvNnhkIgcHHvGWyw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (0.1ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/model.image" for ::1 at 2017-02-27 20:41:07 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/model.image"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.2ms)
+
+
+Started GET "/checkers" for ::1 at 2017-02-27 20:41:18 +0900
+
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (113.5ms)
+  [1m[36mPersonalDatabase Load (4.5ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 1]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 2]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 3]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 4]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 6]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 7]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 8]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 9]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 10]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?[0m  [["id", 11]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "personal_databases" WHERE "personal_databases"."id" = ?  [["id", 12]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tsubasa Masuwaka"], ["height", 150], ["weight", 35], ["image", "/assets/tsubasa.jpeg"], ["created_at", "2017-02-27 11:59:11.863101"], ["updated_at", "2017-02-27 11:59:11.863101"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Yuko Oshima"], ["height", 152], ["weight", 43], ["image", "/assets/yuko.jpg"], ["created_at", "2017-02-27 11:59:11.877022"], ["updated_at", "2017-02-27 11:59:11.877022"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ai Takahashi"], ["height", 154], ["weight", 42], ["image", "/assets/ai.jpg"], ["created_at", "2017-02-27 11:59:11.882233"], ["updated_at", "2017-02-27 11:59:11.882233"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Airi Taira"], ["height", 155], ["weight", 45], ["image", "/assets/profile.jpg"], ["created_at", "2017-02-27 11:59:11.888028"], ["updated_at", "2017-02-27 11:59:11.888028"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kumiko Funayama"], ["height", 155], ["weight", 38], ["image", "/assets/kumiko.jpg"], ["created_at", "2017-02-27 11:59:11.893103"], ["updated_at", "2017-02-27 11:59:11.893103"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Tao Tsutiya"], ["height", 155], ["weight", 46], ["image", "/assets/kumiko.jpg"], ["created_at", "2017-02-27 11:59:11.898114"], ["updated_at", "2017-02-27 11:59:11.898114"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Satomi Ishihara"], ["height", 157], ["weight", 45], ["image", "/assets/satomi.jpg"], ["created_at", "2017-02-27 11:59:11.905191"], ["updated_at", "2017-02-27 11:59:11.905191"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Rino Sashihara"], ["height", 157], ["weight", 43], ["image", "/assets/rino.jpg"], ["created_at", "2017-02-27 11:59:11.909812"], ["updated_at", "2017-02-27 11:59:11.909812"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Keiko Kitagawa"], ["height", 160], ["weight", 42], ["image", "/assets/keiko.jpg"], ["created_at", "2017-02-27 11:59:11.914802"], ["updated_at", "2017-02-27 11:59:11.914802"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Kasumi Arimura"], ["height", 160], ["weight", 46], ["image", "/assets/kasumi.jpg"], ["created_at", "2017-02-27 11:59:11.920634"], ["updated_at", "2017-02-27 11:59:11.920634"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Mirei Kiritani"], ["height", 163], ["weight", 39], ["image", "/assets/mirei.jpg"], ["created_at", "2017-02-27 11:59:11.926229"], ["updated_at", "2017-02-27 11:59:11.926229"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Rola"], ["height", 165], ["weight", 48], ["image", "/assets/rola.jpg"], ["created_at", "2017-02-27 11:59:11.931462"], ["updated_at", "2017-02-27 11:59:11.931462"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yui Aragaki"], ["height", 168], ["weight", 50], ["image", "/assets/yui.jpg"], ["created_at", "2017-02-27 11:59:11.937003"], ["updated_at", "2017-02-27 11:59:11.937003"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2017-02-27 20:59:19 +0900
+Processing by CheckersController#index as HTML
+  Rendered checkers/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 317ms (Views: 313.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 20:59:30 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L6OOewY3csDanP6RKcWQYjnE7Z5rVJxH25MTeXEVT6pjgdsNOHw4NEBR/timsrEPZh/rKHh9p9dIuo7vu+zz9A==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.3ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/model.image" for ::1 at 2017-02-27 20:59:30 +0900
+
+ActionController::RoutingError (No route matches [GET] "/images/model.image"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.5ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 21:00:38 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L6OOewY3csDanP6RKcWQYjnE7Z5rVJxH25MTeXEVT6pjgdsNOHw4NEBR/timsrEPZh/rKHh9p9dIuo7vu+zz9A==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (0.1ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/profile.jpg" for ::1 at 2017-02-27 21:00:38 +0900
+
+
+Started GET "/assets/kumiko.jpg" for ::1 at 2017-02-27 21:00:38 +0900
+
+
+Started GET "/checkers" for ::1 at 2017-02-27 21:01:16 +0900
+
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (73.2ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (157.0ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 21:01:19 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L6OOewY3csDanP6RKcWQYjnE7Z5rVJxH25MTeXEVT6pjgdsNOHw4NEBR/timsrEPZh/rKHh9p9dIuo7vu+zz9A==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.1ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/profile.jpg" for ::1 at 2017-02-27 21:01:19 +0900
+
+
+Started GET "/assets/kumiko.jpg" for ::1 at 2017-02-27 21:01:19 +0900
+
+
+Started GET "/" for ::1 at 2017-02-27 21:45:35 +0900
+Processing by CheckersController#index as HTML
+  Rendered checkers/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 240ms (Views: 236.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 21:45:42 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gb3rZQcoZaKlsBioegOdveb8pR7PjizKXAmqcqcGnpHNn74TOWMvVj99GOH1dLzQuSejqNynF1rPIDfkbf8izw==", "height"=>"156", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (0.3ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 156]]
+  Rendered checkers/result.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 21:45:52 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gb3rZQcoZaKlsBioegOdveb8pR7PjizKXAmqcqcGnpHNn74TOWMvVj99GOH1dLzQuSejqNynF1rPIDfkbf8izw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.1ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/profile.jpg" for ::1 at 2017-02-27 21:45:52 +0900
+
+
+Started GET "/assets/kumiko.jpg" for ::1 at 2017-02-27 21:45:52 +0900
+
+
+Started GET "/checkers" for ::1 at 2017-02-27 21:46:09 +0900
+
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.3ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (170.8ms)
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 21:46:13 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gb3rZQcoZaKlsBioegOdveb8pR7PjizKXAmqcqcGnpHNn74TOWMvVj99GOH1dLzQuSejqNynF1rPIDfkbf8izw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (0.1ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/profile.jpg" for ::1 at 2017-02-27 21:46:13 +0900
+
+
+Started GET "/assets/kumiko.jpg" for ::1 at 2017-02-27 21:46:13 +0900
+
+
+Started POST "/checkers" for ::1 at 2017-02-27 21:46:30 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gb3rZQcoZaKlsBioegOdveb8pR7PjizKXAmqcqcGnpHNn74TOWMvVj99GOH1dLzQuSejqNynF1rPIDfkbf8izw==", "height"=>"155", "weight"=>"49", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.1ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 155]]
+  Rendered checkers/result.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/profile.jpg" for ::1 at 2017-02-27 21:46:30 +0900
+
+
+Started GET "/assets/kumiko.jpg" for ::1 at 2017-02-27 21:46:30 +0900
+
+
+Started GET "/checkers" for ::1 at 2017-02-27 21:46:43 +0900
+
+ActionController::RoutingError (No route matches [GET] "/checkers"):
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.7.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.7.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.7.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.7.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.7.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/miki/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.7.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.9ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.7ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/miki/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-27 21:46:47 +0900
+Processing by CheckersController#index as HTML
+  Rendered checkers/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
