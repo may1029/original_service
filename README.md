@@ -9,3 +9,9 @@ To develop original service for work of tech academy
 * rails applicationの生成
 * checkersの作成 (index, message-boardを参照)
 * migrationはまだ <-- 画像ファイルをどのようにDBに登録するかを検討中のため
+
+## 0227
+* seed dataの追加 <-- testなので上手くできたらdbの中身をclearにして新しく追加するとよいかも
+* formの作成
+  * 今回はmodelを使うformではないのでform_forではなくform_tagを用いる
+*

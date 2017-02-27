@@ -1,5 +1,16 @@
 <h1>Checkers#index</h1>
 <p>Enter your personal data</p>
+
+<%= form_tag('/checkers', method: "POST") do %>
+  <%= label_tag 'height' %>
+  <%= text_field_tag :height %><br>
+
+  <%= label_tag 'weight' %>
+  <%= text_field_tag :weight %>
+
+  <%= submit_tag 'Calculate', class: 'btn btn-large btn-primary' %>
+<% end %>
+
 <% if false %>
 <% PersonalDatabase.all.each do |record| %>
   <%= record.name %><br>
