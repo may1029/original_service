@@ -4424,3 +4424,125 @@ Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.1ms)
 
 
 Started GET "/assets/tsubasa.jpeg" for ::1 at 2017-03-05 20:20:00 +0900
+
+
+Started GET "/" for ::1 at 2017-03-05 20:54:25 +0900
+Processing by CheckersController#index as HTML
+  Rendered checkers/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 286ms (Views: 281.1ms | ActiveRecord: 0.0ms)
+  [1m[36mPersonalDatabase Load (4.4ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases"[0m
+  [1m[35mSQL (10.5ms)[0m  DELETE FROM "personal_databases"
+  [1m[36mPersonalDatabase Load (0.2ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Tsubasa Masuwaka"], ["height", 150], ["weight", 35], ["image", "/assets/tsubasa.jpeg"], ["created_at", "2017-03-05 11:58:07.610726"], ["updated_at", "2017-03-05 11:58:07.610726"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Kanna Hashimoto"], ["height", 151], ["weight", 47], ["image", "/assets/Kannna.jpeg"], ["created_at", "2017-03-05 11:58:07.621305"], ["updated_at", "2017-03-05 11:58:07.621305"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yuko Oshima"], ["height", 152], ["weight", 43], ["image", "/assets/yuko.jpg"], ["created_at", "2017-03-05 11:58:07.626340"], ["updated_at", "2017-03-05 11:58:07.626340"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Minami Tanaka"], ["height", 153], ["weight", 38], ["image", "/assets/minami.jpg"], ["created_at", "2017-03-05 11:58:07.631447"], ["updated_at", "2017-03-05 11:58:07.631447"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Ai Takahashi"], ["height", 154], ["weight", 42], ["image", "/assets/ai.jpg"], ["created_at", "2017-03-05 11:58:07.636470"], ["updated_at", "2017-03-05 11:58:07.636470"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Tao Tsutiya"], ["height", 155], ["weight", 46], ["image", "/assets/tao.jpg"], ["created_at", "2017-03-05 11:58:07.642530"], ["updated_at", "2017-03-05 11:58:07.642530"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Airi Taira"], ["height", 156], ["weight", 45], ["image", "/assets/profile.jpg"], ["created_at", "2017-03-05 11:58:07.645704"], ["updated_at", "2017-03-05 11:58:07.645704"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Satomi Ishihara"], ["height", 157], ["weight", 45], ["image", "/assets/satomi.jpg"], ["created_at", "2017-03-05 11:58:07.650903"], ["updated_at", "2017-03-05 11:58:07.650903"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Kei Yasuda"], ["height", 158], ["weight", 50], ["image", "/assets/kei.jpg"], ["created_at", "2017-03-05 11:58:07.656092"], ["updated_at", "2017-03-05 11:58:07.656092"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Keiko Kitagawa"], ["height", 160], ["weight", 42], ["image", "/assets/keiko.jpg"], ["created_at", "2017-03-05 11:58:07.660463"], ["updated_at", "2017-03-05 11:58:07.660463"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Atsuko Maeda"], ["height", 161], ["weight", 40], ["image", "/assets/atsuko.jpg"], ["created_at", "2017-03-05 11:58:07.667798"], ["updated_at", "2017-03-05 11:58:07.667798"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Miki Ando"], ["height", 162], ["weight", 50], ["image", "/assets/miki.jpg"], ["created_at", "2017-03-05 11:58:07.673347"], ["updated_at", "2017-03-05 11:58:07.673347"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Mayuko Kawakita"], ["height", 163], ["weight", 39], ["image", "/assets/mayuko.jpg"], ["created_at", "2017-03-05 11:58:07.678796"], ["updated_at", "2017-03-05 11:58:07.678796"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Mirei Kiritani"], ["height", 163], ["weight", 39], ["image", "/assets/mirei.jpg"], ["created_at", "2017-03-05 11:58:07.684106"], ["updated_at", "2017-03-05 11:58:07.684106"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Jun Hasegawa"], ["height", 164], ["weight", 50], ["image", "/assets/jun.jpg"], ["created_at", "2017-03-05 11:58:07.690040"], ["updated_at", "2017-03-05 11:58:07.690040"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Rola"], ["height", 165], ["weight", 48], ["image", "/assets/rola.jpg"], ["created_at", "2017-03-05 11:58:07.695451"], ["updated_at", "2017-03-05 11:58:07.695451"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Haruna Kawaguchi"], ["height", 166], ["weight", 46], ["image", "/assets/haruna.jpg"], ["created_at", "2017-03-05 11:58:07.700691"], ["updated_at", "2017-03-05 11:58:07.700691"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Mitsuki Yamamoto"], ["height", 167], ["weight", 46], ["image", "/assets/mitsuki.jpg"], ["created_at", "2017-03-05 11:58:07.706310"], ["updated_at", "2017-03-05 11:58:07.706310"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Yui Aragaki"], ["height", 168], ["weight", 50], ["image", "/assets/yui.jpg"], ["created_at", "2017-03-05 11:58:07.711545"], ["updated_at", "2017-03-05 11:58:07.711545"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Mariya Nishiuchi"], ["height", 169], ["weight", 47], ["image", "/assets/mariya.jpg"], ["created_at", "2017-03-05 11:58:07.717049"], ["updated_at", "2017-03-05 11:58:07.717049"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "personal_databases" ("name", "height", "weight", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Nana Eikura"], ["height", 170], ["weight", 50], ["image", "/assets/nana.jpg"], ["created_at", "2017-03-05 11:58:07.722321"], ["updated_at", "2017-03-05 11:58:07.722321"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36mPersonalDatabase Load (0.9ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases"[0m
+
+
+Started GET "/" for ::1 at 2017-03-05 20:58:50 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CheckersController#index as HTML
+  Rendered checkers/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1132ms (Views: 1121.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/checkers" for ::1 at 2017-03-05 20:59:01 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FZn7Tv1tNhXClNkGZaBUMPGyf1watsdB8vpBqcKLRUpZu644wyZ84VhZ2U/q13Vdrml56gmf/NFh09w/CHL5FA==", "height"=>"152", "weight"=>"55", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.2ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 152]]
+  Rendered checkers/result.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 73ms (Views: 57.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/yuko.jpg" for ::1 at 2017-03-05 20:59:01 +0900
+
+
+Started POST "/checkers" for ::1 at 2017-03-05 20:59:14 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FZn7Tv1tNhXClNkGZaBUMPGyf1watsdB8vpBqcKLRUpZu644wyZ84VhZ2U/q13Vdrml56gmf/NFh09w/CHL5FA==", "height"=>"152", "weight"=>"55", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (0.1ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 152]]
+  Rendered checkers/result.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/yuko.jpg" for ::1 at 2017-03-05 20:59:14 +0900
+
+
+Started POST "/checkers" for ::1 at 2017-03-05 20:59:27 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FZn7Tv1tNhXClNkGZaBUMPGyf1watsdB8vpBqcKLRUpZu644wyZ84VhZ2U/q13Vdrml56gmf/NFh09w/CHL5FA==", "height"=>"151", "weight"=>"70", "commit"=>"Calculate"}
+  [1m[35mPersonalDatabase Load (0.1ms)[0m  SELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?  [["height", 151]]
+  Rendered checkers/result.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/Kannna.jpeg" for ::1 at 2017-03-05 20:59:27 +0900
+
+
+Started POST "/checkers" for ::1 at 2017-03-05 20:59:33 +0900
+Processing by CheckersController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FZn7Tv1tNhXClNkGZaBUMPGyf1watsdB8vpBqcKLRUpZu644wyZ84VhZ2U/q13Vdrml56gmf/NFh09w/CHL5FA==", "height"=>"149", "weight"=>"70", "commit"=>"Calculate"}
+  [1m[36mPersonalDatabase Load (0.1ms)[0m  [1mSELECT "personal_databases".* FROM "personal_databases" WHERE "personal_databases"."height" = ?[0m  [["height", 149]]
+  Rendered checkers/result.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.1ms)
