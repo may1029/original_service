@@ -1,10 +1,37 @@
-<h1>Checkers#index</h1>
-<p>Enter your personal data</p>
-
-<%= @bmi.round(2) %> <br>
-<% @model.each do |model| %>
-  <%= model.name %><br>
-  <%= model.height %><br>
-  <%= model.weight %><br>
-  <%= image_tag model.image, alt: model.name, size: '120x150' %><br>
-<% end %>
+<h1><FONT color="#ff69b4">Personal Data Checker</h1></FONT>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <div class="box">
+        <p class="text">
+          Enter your personal data<br>
+          We calculate your BMI value and show a model who is nearest height from you
+        </p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-6 text-center">
+      <p>your BMI is...</p>
+      <div class="round">
+        <%= @bmi.round(2) %>
+      </div>
+      <br>
+      <p><%= @judge %></p>
+    </div>
+    <div class="col-lg-6">
+      <p>The nearest height model is...</p>
+      <% @model.each do |model| %>
+      <div class="col-lg-5">
+        <%= image_tag model.image, alt: model.name, size: '120x150' %>
+      </div>
+      <div class="col-lg-1">
+      <%= model.name %><br>
+      <%= model.height %>cm<br>
+      <%= model.weight %>kg
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
