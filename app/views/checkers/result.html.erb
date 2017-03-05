@@ -12,7 +12,7 @@
   </div>
   <br>
   <div class="row">
-    <div class="col-lg-6 text-center">
+    <div class="col-lg-4 text-center">
       <p>your BMI is...</p>
       <div class="round">
         <%= @bmi.round(2) %>
@@ -20,17 +20,24 @@
       <br>
       <p><%= @judge %></p>
     </div>
-    <div class="col-lg-6">
-      <p>The nearest height model is...</p>
+    <p>The nearest height model is...</p>
+    <div class="col-lg-1">
       <% @model.each do |model| %>
-      <div class="col-lg-5">
-        <%= image_tag model.image, alt: model.name, size: '120x150' %>
+      <%= image_tag model.image, alt: model.name, size: '160x200' %>
+    </div>
+      <div class="col-lg-6">
+        <p class="text-center">
+          <FONT size="6px"><%= model.name %></Font><br>
+          (<%= model.height %>cm, <%= model.weight %>kg)<br>
+        </p>
+        <div class="row text-center">
+          <br>
+          <p> the difference is...</p>
+          <div class="round">
+            <%= (model.weight-@weight).round(2)%>kg
+          </div>
       </div>
-      <div class="col-lg-1">
-      <%= model.name %><br>
-      <%= model.height %>cm<br>
-      <%= model.weight %>kg
-      </div>
+   </div>
       <% end %>
     </div>
   </div>

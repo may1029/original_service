@@ -4,6 +4,7 @@ class CheckersController < ApplicationController
   end
 
   def result
+    @weight = params[:weight].to_i * 1.0
     @bmi = 1.0 * params[:weight].to_i / ((params[:height].to_i / 100.0)  ** 2)
     if @bmi < 18.4 then
       @judge = "Too thin"
@@ -14,6 +15,7 @@ class CheckersController < ApplicationController
     end
 
     @model = PersonalDatabase.where(height: params[:height])
+    #model = PersonalDatabase.where(height: params[:height])
     # render text: @bmi.round(2)
     #BMIの計算
     #PersonalDBと身長の参照
