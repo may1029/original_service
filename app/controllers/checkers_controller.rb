@@ -15,9 +15,7 @@ class CheckersController < ApplicationController
     end
 
     @model = PersonalDatabase.where(height: params[:height])
-    # if @model.nil
-    #   render '' 
-    # end
+    render 'nodata.html.erb' if @model.nil?
     #model = PersonalDatabase.where(height: params[:height])
     # render text: @bmi.round(2)
     #BMIの計算
