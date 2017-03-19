@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'checkers#index'
   post 'checkers' => 'checkers#result'
+  #post 'checkers/nodata'
   # resources :checkers, except: [:new, :edit, :destroy]
 
   # The priority is based upon order of creation: first created -> highest priority.
