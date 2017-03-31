@@ -5,8 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-person1 = PersonalDatabase.create(name: "Tsubasa Masuwaka", height: 150, weight: 35, image: "/assets/tsubasa.jpeg")
-person2 = PersonalDatabase.create(name: "Kanna Hashimoto", height: 151, weight: 47, image: "/assets/kannna.jpg")
+person1 = PersonalDatabase.create(name: "Tsubasa Masuwaka", height: 150, weight: 35, image: "/assets/tsubasa.jpg")
+person2 = PersonalDatabase.create(name: "Kanna Hashimoto", height: 151, weight: 47, image: "/assets/kanna.jpg")
 person3 = PersonalDatabase.create(name: "Yuko Oshima", height: 152, weight: 43, image: "/assets/yuko.jpg")
 person4 = PersonalDatabase.create(name: "Chiaki Itoh", height: 153, weight: 45, image: "/assets/chiaki.jpg")
 person5 = PersonalDatabase.create(name: "Ai Takahashi", height: 154, weight: 42, image: "/assets/ai.jpg")
