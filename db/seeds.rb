@@ -26,6 +26,6 @@ person18 = PersonalDatabase.create(name: "Haruna Kawaguchi", height: 166, weight
 person19 = PersonalDatabase.create(name: "Mitsuki Yamamoto", height: 167, weight: 46.9, image: "/assets/mitsuki.jpg")
 person20 = PersonalDatabase.create(name: "Yui Aragaki", height: 168, weight: 50, image: "/assets/yui.jpg")
 person21 = PersonalDatabase.create(name: "Yu Yamada", height: 169, weight: 47, image: "/assets/yu.jpg")
-person22 = PersonalDatabase.create(name: "Mariya Nishiuchi", height: 170, weight: 47, image: "/assets/mariya.jpg")
+person22 = PersonalDatabase.create(name: "Mariya Nishiuchi", height: 170, weight: 47, image: "/assets/mariya.png")
 
 
